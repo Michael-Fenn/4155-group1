@@ -1,8 +1,9 @@
 import csv
 
+# place file path after " r" "
 with open(r"C:\Users\Admin\Downloads\cleaned_09-25-2021.csv") as file:
     csvreader = csv.reader(file)
-
+# make new file to hold the trimmed data values and add path here 
     f = open(r"C:\Users\Admin\Downloads\Testrewrite1.txt", 'w')
 
     line = 0
