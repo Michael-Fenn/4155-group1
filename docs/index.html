@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type = 'module' src="index.js"></script>
+    <script type='module' src="index.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
@@ -18,7 +18,7 @@
     <body>
         <nav class="navbar-cs nav-bg-green nav-wrapper ">
             <div class="nav">
-                <a href="index.html "><img src="images/uncclogo.png " alt="unccLogo" class="navbar-logo"></a>
+                <a href="index.html "><img src="/images/uncclogo.png " alt="unccLogo" class="navbar-logo"></a>
                 <a href="index.html " class="nav-link-color nav-font-brand "> UNCC Heatmap</a>
             </div>
             <div class="nav-wrapper ">
@@ -30,13 +30,14 @@
                 </ul>
             </div>
         </nav>
-        <div id = "map">
-                <script
-                      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNRAJw6MEHXzG2wS-1MB6TGqn43v5_b7k&callback=initMap&v=weekly"
-                      defer
-                 ></script>
+        <div id="map" class="conatiner">
+            <div class="row">
+                <div class="col">
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNRAJw6MEHXzG2wS-1MB6TGqn43v5_b7k&callback=initMap&v=weekly" defer></script>
+                </div>
             </div>
-        
+        </div>
+
         <div class="container ">
             <br>
 
