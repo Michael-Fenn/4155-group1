@@ -109,13 +109,13 @@
     border-radius: 5px
 }
 
-.aboutHeading {
+.heading {
     color: #4d7441;
 }
 
-.aboutsection {
+.section {
     width: 540px;
-    height: 100px;
+    height: 90px;
     border: hidden;
     border-radius: 5px;
     background-color: gainsboro;
