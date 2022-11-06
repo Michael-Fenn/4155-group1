@@ -72,12 +72,12 @@ Scot = Scott
 Foun = Foundation
 CenC = ?
 FacA = Facilities Annex?
-CRI = parking?
+CRI = CRI Deck 1
 East = East Deck?
-FouA = ?
+FouA = Foundation Annex
 RE = ?
 NCRC = NC research campus
 Nine = Niner house?
 StuA = Student Activity Center
 Epic = Epic
-
+StuH = Student Health Center 
