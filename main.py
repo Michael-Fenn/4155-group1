@@ -61,4 +61,4 @@ with open(r"C:\Users\Admin\Downloads\cleaned_09-25-2021.csv") as file:
             print(connection_Entry)
             line += 1
 
-    print(str(line))
+   
