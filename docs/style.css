@@ -104,7 +104,7 @@
     margin: auto;
     text-align: center;
     width: Auto;
-    height: 100px;
+    height: Auto;
     border: hidden;
     border-radius: 5px
 }
@@ -115,7 +115,7 @@
 
 .section {
     width: 540px;
-    height: 90px;
+    height: auto;
     border: hidden;
     border-radius: 5px;
     background-color: gainsboro;
@@ -129,4 +129,86 @@
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.p-visionbox {
+    background-color: gainsboro;
+    margin: auto;
+    text-align: center;
+    width: Auto;
+    height: 176px;
+    border: hidden;
+    border-radius: 5px
+}
+
+.contactUsText {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    align-items: center;
+    padding: 17px 22px;
+}
+
+.AIText {
+    font-size: 25px;
+}
+
+.paddingtop {
+    padding-top: 10px;
+}
+
+.privacyPolicyText {
+    font-size: 20px;
+}
+
+.dataInfoText {
+    font-size: 22px;
+}
+
+.profilepic {
+    width: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.aboutText {
+    font-size: 15px;
+}
+
+.visionText {
+    font-size: 22px;
+}
+
+.ITvisionbox {
+    background-color: gainsboro;
+    margin: auto;
+    text-align: center;
+    width: Auto;
+    height: auto;
+    border: hidden;
+    border-radius: 5px
+}
+
+.ITtext {
+    font-size: 25px;
+}
+
+.linegraph {
+    padding: 10px;
+    width: 100%;
+}
+
+.hotspotsP {
+    font-size: 25px;
+}
+
+h4 {
+    text-align: center;
+}
+
+.avgtraffic {
+    padding: 10px;
+    width: 100%;
 }
