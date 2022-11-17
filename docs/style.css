@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-.nav-link-current:active {
-    border-color: #4d7441 #4d7441 rgb(255, 255, 255);
-}
 
-.nav-link-color {
+/* .nav-link-current:active {
+    border-color: #1c381e #1c381e rgb(255, 255, 255);
+} */
+
+
+/* .nav-link-color {
     color: rgb(255, 255, 255);
     padding: .5rem 1rem;
-}
+} */
 
 .nav {
     padding-left: 14px;
@@ -32,7 +34,7 @@
 }
 
 .nav-bg-green {
-    background-color: #4d7441;
+    background-color: #1c381e;
 }
 
 .nav-font {
@@ -56,9 +58,9 @@
 }
 
 .footer {
-    background-color: #4d7441;
+    background-color: #1c381e;
     text-align: right;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     width: 100%;
     height: 64px;
@@ -89,9 +91,9 @@
 }
 
 .btn-size {
-    background-color: #4d7441;
+    background-color: #1c381e;
     color: white;
-    border: #4d7441;
+    border: #1c381e;
     display: inline-block;
     padding: 6px 100px;
     border-width: 5px;
@@ -122,13 +124,17 @@
 }
 
 #map {
-    height: 500px;
+    height: 450px;
     width: 50%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 100px;
+}
+
+.map-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
 }
 
 .p-visionbox {
@@ -215,5 +221,19 @@ h4 {
 
 iframe {
     width: 1000px;
-    height: 500px;
+    height: 450px;
+}
+
+.ParkingMap {
+    width: 1000px;
+    height: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: Auto;
+    padding-bottom: Auto;
+}
+
+.content {
+    padding-bottom: 350px;
 }
