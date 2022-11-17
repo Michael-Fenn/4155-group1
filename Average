@@ -1,39 +1,36 @@
 import csv
 
-with open(r"C:\Users\Admin\Downloads\cleaned_09-25-2021 - Trimmed - hourcounter.csv") as file:
 
-    f = open(r"C:\Users\Admin\Downloads\cleaned_09-25-2021 - Trimmed - hourcounter - Average.csv", 'w')
+
+with open(r"C:\Users\Admin\Desktop\data for each day\SundayTotalNonCovid.txt") as file:
+    f = open(r"C:\Users\Admin\Desktop\data for each day\SundayAverageNonCovid.txt", 'w')
     csvreader = csv.reader(file)
     building_list = {}
+    building_hour_entry = {}
     building_entry_total = []
     building_entry_unique = []
     i = 0
-    
     for row in csvreader:
-    
         row_string = str(row)
         building_entry = row_string[:5]
         building_entry_count = ""
         position = 5
         character = ""
         building_count = ""
-
+        checker = row_string[5]
+        if row_string[position] == ":":
+            continue
         while row_string[position] != ":":
-        
             character = row_string[position]
-            
             if character.isspace():
                 break
-                
             building_entry = building_entry + row_string[position]
+
             position += 1
-            
         position += 2
         print(row_string[position])
         testx = row_string[position]
-        
         while row_string[position].isnumeric():
-        
             character = row_string[position]
             building_entry_count += row_string[position]
             position +=1
@@ -42,30 +39,36 @@ with open(r"C:\Users\Admin\Downloads\cleaned_09-25-2021 - Trimmed - hourcounter.
         value = building_entry
 
         if building_entry in building_list:
-        
             new_count = int(building_entry_count)
             old_count = int(building_hour_entry[building_entry])
             building_hour_entry[building_entry] = str(new_count + old_count)
             building_list.update(building_hour_entry)
             building_entry_total.append(building_entry)
-            
         if building_entry not in building_list:
-        
             building_entry_unique.append(building_entry)
             building_entry_total.append(building_entry)
-            
-            building_hour_entry = {
-                building_entry : building_entry_count
-            }
-            
+            building_hour_entry[building_entry] = building_entry_count
             building_list.update(building_hour_entry)
-                
+
+
+
+
+
         position += 2
-    
+
+        # while row_string[position].isnumeric():
+        #     building_count_number = row_string[position]
+        #     if row_string[position].isnumeric() == False:
+        #         building_find = building_list.index(building_entry)
+        #
+        #         break
+        #     building_count += building_count_number
+        #     position += 1
+
+
+
     i = 0
-    
     for entry in building_entry_unique:
-    
         print(entry)
         hey = entry
         #hey = hey.strip("['")
@@ -76,4 +79,17 @@ with open(r"C:\Users\Admin\Downloads\cleaned_09-25-2021 - Trimmed - hourcounter.
         building_list.update(building_list)
         hey.strip("['")
         f.write(hey + " " + str(average) + "\n")
+
+        #average = int(building_hour_entry[name])/building_total
+        #building_hour_entry[name] = average
+        #building_hour_entry.update(name)
+
         i += 1
+
+    print(str(building_list))
+
+
+
+
+
+
