@@ -99,7 +99,7 @@
 }
 
 .center-drop {
-    display: auto;
+    display: inline-block;
     align-items: center;
 }
 
@@ -248,5 +248,5 @@ iframe {
 }
 
 .content {
-    padding-bottom: 350px;
+    padding-bottom: 25px;
 }
