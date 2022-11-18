@@ -1,10 +1,9 @@
 // Initialize and add the map
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibWZlbm4yIiwiYSI6ImNsYWp1cGk0aTAzNnUzbnMwZ3o0bm4xNG8ifQ.-FWDnfl7FidedLkI7qIJiA';
-const map = new mapboxgl.Map({
+var map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mfenn2/clajw6p60001j14qphmp5iz3n', // style URL
-    zoom: 9 // starting zoom
 });
 
 //placeholder values
@@ -14,10 +13,10 @@ var medium = 600;
 var low = 400;
 var very_low = 200;
 
-map.setPaintProperty("buildings", "fill-color",
-    ["case",
-        ["==", ["id"], 1060166212],
-        "ff0000",
-        "#00000"]);
+map.on('load', function() {
+  map.setPaintProperty("uncc",'fill-color', '#0000FF');
+  map.setPaintProperty("chhs", "fill-color", "#ff0000");
+  map.setPaintProperty("cato", "fill-color", "#F2E34C")
+});
 
-
+ 
