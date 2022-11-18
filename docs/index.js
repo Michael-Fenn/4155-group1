@@ -16,7 +16,8 @@ var very_low = 200;
 map.on('load', function() {
   map.setPaintProperty("uncc",'fill-color', '#0000FF');
   map.setPaintProperty("chhs", "fill-color", "#ff0000");
-  map.setPaintProperty("cato", "fill-color", "#F2E34C")
+  map.setPaintProperty("cato", "fill-color", "#F2E34C");
+  map.setPaintProperty("woodward", "fill-color", "#FFB52E");
 });
 
  
