@@ -42,14 +42,27 @@
     color: white;
     padding: .5rem 1rem;
     font-size: 22px;
+    text-decoration: none;
 }
 
-.nav-font-brand,
+.nav-font:hover {
+    text-decoration: underline;
+}
+
+.nav-font-brand {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    padding: .5rem 1rem;
+    font-size: 22px;
+    text-decoration: none;
+}
+
 .nav-font-brand:hover {
     font-family: 'Oswald', sans-serif;
     color: white;
     padding: .5rem 1rem;
     font-size: 22px;
+    text-decoration: underline;
 }
 
 .btn-font {
