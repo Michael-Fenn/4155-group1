@@ -12,7 +12,8 @@ var high = 800;
 var medium = 600;
 var low = 400;
 var very_low = 200;
-
+//current building names: "uncc"(union), chhs, cato, woodward, bioinformatics, prospector, portal, student-activity-center, 
+// cameron, burson, fretwell, colvard, cone, atkins, urec. 
 map.on('load', function() {
   map.setPaintProperty("uncc",'fill-color', '#0000FF');
   map.setPaintProperty("chhs", "fill-color", "#ff0000");
