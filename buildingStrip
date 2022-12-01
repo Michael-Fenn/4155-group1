@@ -1,0 +1,13 @@
+import csv
+with open(r"C:\Users\Admin\Desktop\data for each day\SundayAverageNonCovid.txt") as file:
+    f = open(r"C:\Users\Admin\Desktop\data for each day\StripedTest.txt", 'w')
+    csvreader = csv.reader(file)
+    valid_buildings = ["Unio", "Cato", "Wood", "Bioi", "Pros", "PORT", "StuA", "Came", "Burs", "Fret", "Colv", "Cone",
+                       "AtkiG", "UREC"]
+    for row in csvreader:
+        row_string = str(row)
+
+        for substring in valid_buildings:
+            if substring in row_string:
+                f.write(row_string + "\n")
+                
