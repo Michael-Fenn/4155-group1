@@ -9,5 +9,9 @@ with open(r"C:\Users\Admin\Desktop\data for each day\SundayAverageNonCovid.txt")
 
         for substring in valid_buildings:
             if substring in row_string:
-                f.write(row_string + "\n")
-                
+                strippedString = row_string.strip('["[')
+                strippedString = strippedString.strip('"]')
+                strippedString = strippedString.strip("'")
+                strippedString = strippedString.strip('["')
+                print(strippedString)
+                f.write(strippedString + "\n")
