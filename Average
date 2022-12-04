@@ -7,7 +7,7 @@ with open(r"C:\Users\Admin\Desktop\data for each day\SundayTotalNonCovid.txt") a
     csvreader = csv.reader(file)
     building_list = {}
     building_hour_entry = {}
-    building_entry_total = []
+    building_entry_total = [] 
     building_entry_unique = []
     i = 0
     for row in csvreader:
