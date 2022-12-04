@@ -1,9 +1,9 @@
 import csv
-with open(r"C:\Users\Admin\Desktop\data for each day\SundayAverageNonCovid.txt") as file:
-    f = open(r"C:\Users\Admin\Desktop\data for each day\StripedTest.txt", 'w')
+with open(r"non-covid\Friday.txt") as file:
+    f = open(r"non-covid\Fridaystripped.txt", 'w')
     csvreader = csv.reader(file)
     valid_buildings = ["Unio", "Cato", "Wood", "Bioi", "Pros", "PORT", "StuA", "Came", "Burs", "Fret", "Colv", "Cone",
-                       "AtkiG", "UREC"]
+                       "AtkiG", "UREC", "SVDH"]
     for row in csvreader:
         row_string = str(row)
 
@@ -15,3 +15,4 @@ with open(r"C:\Users\Admin\Desktop\data for each day\SundayAverageNonCovid.txt")
                 strippedString = strippedString.strip('["')
                 print(strippedString)
                 f.write(strippedString + "\n")
+
