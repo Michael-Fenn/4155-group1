@@ -48,66 +48,56 @@
 
                 <div class="row ">
                     <div class="col text-center ">
-                        <div class="dropdown-center ">
-                            <button class="btn-size dropdown-toggle btn-font" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Weekdays
-                        </button>
-                            <ul class="dropdown-menu" id="days">
-                                <li><a class="dropdown-item" href="#">Monday</a></li>
-                                <li><a class="dropdown-item" href="#">Tuesday</a></li>
-                                <li><a class="dropdown-item" href="#">Wednesday</a></li>
-                                <li><a class="dropdown-item" href="#">Thursday</a></li>
-                                <li><a class="dropdown-item" href="#">Friday</a></li>
-                                <li><a class="dropdown-item" href="#">Saturday</a></li>
-                                <li><a class="dropdown-item" href="#">Sunday</a></li>
-                            </ul>
-                        </div>
+                        <form>
+                            <select name="dropdown">
+                                <option value="mon" selected>Monday</option>
+                                <option value="tue" selected>Tuesday</option>
+                                <option value="wed" selected>Wednesday</option>
+                                <option value="thu" selected>Thursday</option>
+                                <option value="fri" selected>Friday</option>
+                                <option value="sat" selected>Saturday</option>
+                                <option value="sun" selected>Sunday</option>
+                            </select>
+                        </form>
                     </div>
                     <div class="col text-center ">
-                        <div class="dropdown-center ">
-                            <button class="btn-size dropdown-toggle btn-font " type="button" data-bs-toggle="dropdown" aria-expanded="false ">
-                            Hours
-                        </button>
-                            <ul class="dropdown-menu" id="time">
-                                <li><a class="dropdown-item " href="# " id="00">12:00 AM</a></li>
-                                <li><a class="dropdown-item " href="# " id="01">1:00 AM</a></li>
-                                <li><a class="dropdown-item " href="# " id="02">2:00 AM</a></li>
-                                <li><a class="dropdown-item " href="# " id="03">3:00 AM</a></li>
-                                <li><a class="dropdown-item " href="# " id="04">4:00 AM</a></li>
-                                <li><a class="dropdown-item " href="# " id="05">5:00 AM</a></li>
-                                <li><a class="dropdown-item " href="# " id="06">6:00 AM</a></li>
-                                <li><a class="dropdown-item " href="# " id="07">7:00 AM</a></li>
-                                <li><a class="dropdown-item " href="# " id="08">8:00 AM</a></li>
-                                <li><a class="dropdown-item " href="# " id="09">9:00 AM</a></li>
-                                <li><a class="dropdown-item " href="# " id="10">10:00 AM</a></li>
-                                <li><a class="dropdown-item " href="# " id="11">11:00 AM</a></li>
-                                <li><a class="dropdown-item " href="# " id="12">12:00 PM</a></li>
-                                <li><a class="dropdown-item " href="# " id="13">1:00 PM</a></li>
-                                <li><a class="dropdown-item " href="# " id="14">2:00 PM</a></li>
-                                <li><a class="dropdown-item " href="# " id="15">3:00 PM</a></li>
-                                <li><a class="dropdown-item " href="# " id="16">4:00 PM</a></li>
-                                <li><a class="dropdown-item " href="# " id="17">5:00 PM</a></li>
-                                <li><a class="dropdown-item " href="# " id="18">6:00 PM</a></li>
-                                <li><a class="dropdown-item " href="# " id="19">7:00 PM</a></li>
-                                <li><a class="dropdown-item " href="# " id="20">8:00 PM</a></li>
-                                <li><a class="dropdown-item " href="# " id="21">9:00 PM</a></li>
-                                <li><a class="dropdown-item " href="# " id="22">10:00 PM</a></li>
-                                <li><a class="dropdown-item " href="# " id="23">11:00 PM</a></li>
-                            </ul>
-                        </div>
+                        <form>
+                            <select name="dropdown">
+                                <option value="0" selected>12:00AM</option>
+                                <option value="1" selected>1:00AM</option>
+                                <option value="2" selected>2:00AM</option>
+                                <option value="3" selected>3:00AM</option>
+                                <option value="4" selected>4:00AM</option>
+                                <option value="5" selected>5:00AM</option>
+                                <option value="6" selected>6:00AM</option>
+                                <option value="7" selected>7:00AM</option>
+                                <option value="8" selected>8:00AM</option>
+                                <option value="9" selected>9:00AM</option>
+                                <option value="10" selected>10:00AM</option>
+                                <option value="11" selected>11:00AM</option>
+                                <option value="12" selected>12:00PM</option>
+                                <option value="13" selected>1:00PM</option>
+                                <option value="14" selected>2:00PM</option>
+                                <option value="15" selected>3:00PM</option>
+                                <option value="16" selected>4:00PM</option>
+                                <option value="17" selected>5:00PM</option>
+                                <option value="18" selected>6:00PM</option>
+                                <option value="19" selected>7:00PM</option>
+                                <option value="20" selected>8:00PM</option>
+                                <option value="21" selected>9:00PM</option>
+                                <option value="22" selected>10:00PM</option>
+                                <option value="23" selected>11:00PM</option>
+                            </select>
+                        </form>
                     </div>
                     <div class="col text-center ">
-                        <div class="dropdown-center ">
-                            <button class="btn-size dropdown-toggle btn-font" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Covid
-                            </button>
-                            <ul class="dropdown-menu" id="covidToggle">
-                                <li><a class="dropdown-item" href="#">Covid</a></li>
-                                <li><a class="dropdown-item" href="#">Normal Operations</a></li>
-                            </ul>
-                        </div>
+                        <form>
+                            <select name="dropdown">
+                                <option value="true" selected>Covid</option>
+                                <option value="false" selected>Non-Covid</option>
+                            </select>
+                        </form>
                     </div>
-
                 </div>
                 <br>
             </div>
@@ -118,6 +108,4 @@
         <footer class="footer footerText ">Team WIP © 2022. All Rights Reserved.</footer>
     </body>
 </main>
-
-
 </html>

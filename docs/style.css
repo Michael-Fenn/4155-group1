@@ -103,6 +103,17 @@
     align-items: center;
 }
 
+select {
+    background-color: #1c381e;
+    color: white;
+    border: #1c381e;
+    display: inline-block;
+    padding: 6px 100px;
+    border-width: 5px;
+    vertical-align: middle;
+    border-radius: 0.375rem;
+}
+
 .btn-size {
     background-color: #1c381e;
     color: white;
