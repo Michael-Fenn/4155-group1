@@ -63,16 +63,16 @@
                     <div class="col text-center ">
                         <form>
                             <select name="dropdown" class="dropdown" id="hour">
-                                <option value="0" selected>12:00AM</option>
-                                <option value="1" selected>1:00AM</option>
-                                <option value="2" selected>2:00AM</option>
-                                <option value="3" selected>3:00AM</option>
-                                <option value="4" selected>4:00AM</option>
-                                <option value="5" selected>5:00AM</option>
-                                <option value="6" selected>6:00AM</option>
-                                <option value="7" selected>7:00AM</option>
-                                <option value="8" selected>8:00AM</option>
-                                <option value="9" selected>9:00AM</option>
+                                <option value="00" selected>12:00AM</option>
+                                <option value="01" selected>1:00AM</option>
+                                <option value="02" selected>2:00AM</option>
+                                <option value="03" selected>3:00AM</option>
+                                <option value="04" selected>4:00AM</option>
+                                <option value="05" selected>5:00AM</option>
+                                <option value="06" selected>6:00AM</option>
+                                <option value="07" selected>7:00AM</option>
+                                <option value="08" selected>8:00AM</option>
+                                <option value="09" selected>9:00AM</option>
                                 <option value="10" selected>10:00AM</option>
                                 <option value="11" selected>11:00AM</option>
                                 <option value="12" selected>12:00PM</option>
@@ -93,8 +93,8 @@
                     <div class="col text-center ">
                         <form>
                             <select name="dropdown" class="dropdown" id="covid">
-                                <option value="true" selected>Covid</option>
-                                <option value="false" selected>Non-Covid</option>
+                                <option value="covid" selected>Covid</option>
+                                <option value="non-covid" selected>Non-Covid</option>
                             </select>
                         </form>
                     </div>
@@ -102,7 +102,13 @@
                 <br>
             </div>
             <div class="table_container">
-                <table id="tablediv"></table>
+                <table id="table" border='1'>
+                    <tbody id="tableBody">
+                        <tr class="header">
+                            <th>Data</th>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
         <footer class="footer footerText ">Team WIP © 2022. All Rights Reserved.</footer>
