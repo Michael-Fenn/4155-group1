@@ -1,7 +1,5 @@
 // Initialize and add the map
 
-const { time } = require("console");
-
 mapboxgl.accessToken = 'pk.eyJ1IjoibWZlbm4yIiwiYSI6ImNsYWp1cGk0aTAzNnUzbnMwZ3o0bm4xNG8ifQ.-FWDnfl7FidedLkI7qIJiA';
 var map = new mapboxgl.Map({
     container: 'map', // container ID
@@ -96,7 +94,6 @@ document.getElementById('day').onchange = function(){
 }
 document.getElementById('hour').onchange = function(){
   let day = document.getElementById('day').value;
-  let hour = document.getElementById('hour').value;
   let covid = document.getElementById('covid').value;
   let url = "";
   if (covid == "non-covid"){
@@ -149,7 +146,6 @@ document.getElementById('hour').onchange = function(){
 }
 document.getElementById('covid').onchange = function(){
   let day = document.getElementById('day').value;
-  let hour = document.getElementById('hour').value;
   let covid = document.getElementById('covid').value;
   let url = "";
   if (covid == "non-covid"){
