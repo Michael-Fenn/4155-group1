@@ -12,43 +12,38 @@ window.onload = function(){
     }
     //fetches file url
     async function getText(file) {
+      let hour = document.getElementById('hour').value.toString();
       let x = await fetch(file);
       let y = await x.text();
-      let arr = y.split('\n');
-
-      //suppose to chect the time and set the value as string, not sure if neccessary 
-      let time_checker = hour.toString();
-
-      //created a loop that goes through the array made by the data and check every line for the time and if it matches
-      // with the time it adds it to a new array 
-      
-        for (let i = 0; i < arr.length; i++) {
-          time_arr =[];
-        building_time = arr[i].substring(0,2);
-        if(building_time == time_checker){
-          time_arr[i] = arr[i].toString;
-        }
-      }
-    
-      }
-
+      let arr = y.split('\n'); 
       var table = document.getElementById("tableBody");
       //removes old table
       for(var j = table.rows.length; j > 0; j--){
         table.deleteRow(j-1);
       }
-      document.getElementById("tableBody").innerHTML +=  "<tr><th>Building</th><th># of Connections</th></tr>";
       //creates new table data
-
-      //changed arr to time_arr 
-      for (let i = 0; i < arr.length; i++){
-        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + time_arr[i] + "</td></tr>";
+      document.getElementById("tableBody").innerHTML +=  "<tr><th>Building</th><th>Average # of Connections</th></tr>";
+      //created a loop that goes through the array made by the data and check every line for the time and if it matches
+      // with the time it adds it to a new array
+      let building_name = [];
+      let building_time = []; 
+      let building_count = [];
+      for (let a = 0; a < arr.length; a++){
+      
+       building_time[a] = arr[a].substring(0,2).toString();
+       building_name[a] = arr[a].substring(3, 8);
+        building_count[a] =  arr[a].substring(8, );
+        console.log(building_time[a]);
+        if(building_time[a] == hour){
+          document.getElementById("tableBody").innerHTML +=  "<tr><td>" + building_name[a] + "</td><td>" + building_count[a] + "</td></tr>";
+        
+        }
       }
+    }
     
 //checks drop down status and updates table based on selection, time/hour part isn't working yet
 document.getElementById('day').onchange = function(){
   let day = document.getElementById('day').value;
-  let hour = document.getElementById('hour').value;
   let covid = document.getElementById('covid').value;
   let url = "";
   if (covid == "non-covid"){
