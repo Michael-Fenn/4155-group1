@@ -80,6 +80,17 @@
     position: relative;
 }
 
+.footerspace {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #1c381e;
+    text-align: right;
+    height: 64px;
+}
+
 .footerText {
     font-family: 'Oswald', sans-serif;
     color: white;
