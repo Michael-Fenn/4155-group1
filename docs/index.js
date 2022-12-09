@@ -48,13 +48,13 @@ window.onload = function(){
         map.setPaintProperty(building,'fill-color', '#FFA500');
      }
      else if(count > 600){
-        map.setPaintProperty(building,'fill-color', '#FFFF9F');
+        map.setPaintProperty(building,'fill-color', '#FEE12B');
      }
      else if (count > 400){
-        map.setPaintProperty(building,'fill-color', '#ADD8E6');
+        map.setPaintProperty(building,'fill-color', '#40e0d0');
      }
      else if (count > 200){
-        map.setPaintProperty(building,'fill-color', '#0000FF');
+        map.setPaintProperty(building,'fill-color', '#89CFF0');
      }
      else{
         map.setPaintProperty(building,'fill-color', '#00008B');
