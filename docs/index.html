@@ -32,24 +32,23 @@
                 </ul>
             </div>
         </nav>
-            <img src="legend.png" alt="legend" class="center-img">
-            <div class="map-container">
+        <div class="container ">
+            <br>
+            <img src="legend.png" alt="legend" class="legend-img">
+        </div>
+        <div class="map-container">
 
+            <div id='map' style='width: 1000px; height: 500px;'></div>
 
+        </div>
 
-                <div id='map' style='width: 1000px; height: 500px;'></div>
+        <div class="container ">
+            <br>
 
-
-
-            </div>
-
-            <div class="container ">
-                <br>
-
-                <div class="row ">
-                    <div class="col text-center ">
-                        <form>
-                            <select name="dropdown" class="dropdown" id="day">
+            <div class="row ">
+                <div class="col text-center ">
+                    <form>
+                        <select name="dropdown" class="dropdown" id="day">
                                 <option value="mon" selected>Monday</option>
                                 <option value="tue" selected>Tuesday</option>
                                 <option value="wed" selected>Wednesday</option>
@@ -58,11 +57,11 @@
                                 <option value="sat" selected>Saturday</option>
                                 <option value="sun" selected>Sunday</option>
                             </select>
-                        </form>
-                    </div>
-                    <div class="col text-center ">
-                        <form>
-                            <select name="dropdown" class="dropdown" id="hour">
+                    </form>
+                </div>
+                <div class="col text-center ">
+                    <form>
+                        <select name="dropdown" class="dropdown" id="hour">
                                 <option value="00" selected>12:00AM</option>
                                 <option value="01" selected>1:00AM</option>
                                 <option value="02" selected>2:00AM</option>
@@ -88,30 +87,31 @@
                                 <option value="22" selected>10:00PM</option>
                                 <option value="23" selected>11:00PM</option>
                             </select>
-                        </form>
-                    </div>
-                    <div class="col text-center ">
-                        <form>
-                            <select name="dropdown" class="dropdown" id="covid">
+                    </form>
+                </div>
+                <div class="col text-center ">
+                    <form>
+                        <select name="dropdown" class="dropdown" id="covid">
                                 <option value="covid" selected>Covid</option>
                                 <option value="non-covid" selected>Non-Covid</option>
                             </select>
-                        </form>
-                    </div>
+                    </form>
                 </div>
-                <br>
             </div>
-            <div class="table_container">
-                <table id="table" border='1'>
-                    <tbody id="tableBody">
-                        <tr class="header">
-                            <th>Data</th>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <br>
+        </div>
+        <div class="table_container">
+            <table id="table" border='1'>
+                <tbody id="tableBody">
+                    <tr class="header">
+                        <th>Data</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         </div>
         <footer class="footer footerText ">Team WIP © 2022. All Rights Reserved.</footer>
     </body>
 </main>
+
 </html>

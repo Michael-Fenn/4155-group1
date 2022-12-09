@@ -96,6 +96,14 @@
     margin-right: auto;
 }
 
+.legend-img {
+    width: 700px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .center-drop {
     display: inline-block;
     align-items: center;
@@ -259,25 +267,31 @@ iframe {
 .content {
     padding-bottom: 25px;
 }
+
 #table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  #table td, #customers th {
+}
+
+#table td,
+#customers th {
     border: 1px solid #ddd;
     padding: 8px;
-  }
-  
-  #table tr:nth-child(even){background-color: #f2f2f2;}
-  
-  #table tr:hover {background-color: #ddd;}
-  
-  #table th {
+}
+
+#table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#table tr:hover {
+    background-color: #ddd;
+}
+
+#table th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
     background-color: #1c381e;
     color: white;
-  }
+}
