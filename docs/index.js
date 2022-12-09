@@ -9,7 +9,7 @@ window.onload = function(){
       getText("https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/MondayCleaned.txt")
     }
     
-    //fetches file url
+    //fetches file url and converts data to array
     async function getText(file) {
       let hour = document.getElementById('hour').value.toString();
       let x = await fetch(file);
@@ -33,12 +33,13 @@ window.onload = function(){
         building_count[a] =  arr[a].substring(8, );
         console.log(building_time[a]);
         if(building_time[a] == hour){
+          //adds elements to table
           document.getElementById("tableBody").innerHTML +=  "<tr><td>" + building_name[a] + "</td><td>" + building_count[a] + "</td></tr>";
           colorChange(building_name[a], building_count[a]);
         }
       }
     }
-
+    //takes building name and count as input and updates the color of the building according to the building count. 
     function colorChange(building, count){
       building = building.trim();
       if(count > 1000){
@@ -61,7 +62,7 @@ window.onload = function(){
      }
     }
     
-//checks drop down status and updates table based on selection, time/hour part isn't working yet
+//checks drop down status and updates table based on day selection
 document.getElementById('day').onchange = function(){
   let day = document.getElementById('day').value;
   let covid = document.getElementById('covid').value;
@@ -114,6 +115,7 @@ document.getElementById('day').onchange = function(){
   }
   getText(url);
 }
+//checks drop down status and updates table based on hour selection
 document.getElementById('hour').onchange = function(){
   let day = document.getElementById('day').value;
   let covid = document.getElementById('covid').value;
@@ -166,6 +168,7 @@ document.getElementById('hour').onchange = function(){
   }
   getText(url);
 }
+//checks drop down status and updates table based on covid selection
 document.getElementById('covid').onchange = function(){
   let day = document.getElementById('day').value;
   let covid = document.getElementById('covid').value;
@@ -218,22 +221,6 @@ document.getElementById('covid').onchange = function(){
   }
   getText(url);
 }
-//placeholder values
-var very_high = 1000;
-var high = 800;
-var medium = 600;
-var low = 400;
-var very_low = 200;
-//current building names: "uncc"(union), chhs, cato, woodward, bioinformatics, prospector, portal, student-activity-center, 
-// cameron, burson, fretwell, colvard, cone, atkins, urec. 
-/*
-map.on('load', function() {
-  map.setPaintProperty("Unio",'fill-color', '#0000FF');
-  map.setPaintProperty("PORT", "fill-color", "#ff0000");
-  map.setPaintProperty("Cato", "fill-color", "#F2E34C");
-  map.setPaintProperty("Wood", "fill-color", "#FFB52E");
-
-});*/
 
 
 
