@@ -8,6 +8,7 @@ var map = new mapboxgl.Map({
 window.onload = function(){
       getText("https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/MondayCleaned.txt")
     }
+    
     //fetches file url
     async function getText(file) {
       let hour = document.getElementById('hour').value.toString();
@@ -27,16 +28,37 @@ window.onload = function(){
       let building_time = []; 
       let building_count = [];
       for (let a = 0; a < arr.length; a++){
-      
        building_time[a] = arr[a].substring(0,2).toString();
        building_name[a] = arr[a].substring(3, 8);
         building_count[a] =  arr[a].substring(8, );
         console.log(building_time[a]);
         if(building_time[a] == hour){
           document.getElementById("tableBody").innerHTML +=  "<tr><td>" + building_name[a] + "</td><td>" + building_count[a] + "</td></tr>";
-        
+          colorChange(building_name[a], building_count[a]);
         }
       }
+    }
+
+    function colorChange(building, count){
+      building = building.trim();
+      if(count > 1000){
+        map.setPaintProperty(building,'fill-color', '#FF0000');
+     }
+     else if(count > 800){
+        map.setPaintProperty(building,'fill-color', '#FFA500');
+     }
+     else if(count > 600){
+        map.setPaintProperty(building,'fill-color', '#FFFF9F');
+     }
+     else if (count > 400){
+        map.setPaintProperty(building,'fill-color', '#ADD8E6');
+     }
+     else if (count > 200){
+        map.setPaintProperty(building,'fill-color', '#0000FF');
+     }
+     else{
+        map.setPaintProperty(building,'fill-color', '#00008B');
+     }
     }
     
 //checks drop down status and updates table based on selection, time/hour part isn't working yet
@@ -204,13 +226,14 @@ var low = 400;
 var very_low = 200;
 //current building names: "uncc"(union), chhs, cato, woodward, bioinformatics, prospector, portal, student-activity-center, 
 // cameron, burson, fretwell, colvard, cone, atkins, urec. 
+/*
 map.on('load', function() {
   map.setPaintProperty("Unio",'fill-color', '#0000FF');
   map.setPaintProperty("PORT", "fill-color", "#ff0000");
   map.setPaintProperty("Cato", "fill-color", "#F2E34C");
   map.setPaintProperty("Wood", "fill-color", "#FFB52E");
 
-});
+});*/
 
 
 
